@@ -19,3 +19,10 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - 
 chsh -s `which zsh`
 ```
 and logout.
+
+
+## Configuration
+### Terminal Fonts
+[Inconsolata](https://github.com/powerline/fonts/tree/master/Inconsolata) or [SourceCodePro](https://github.com/powerline/fonts/tree/master/SourceCodePro)
+Size: 12px
+
