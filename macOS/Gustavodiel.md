@@ -14,3 +14,12 @@
 ## Mac App Store
 - [Bandwidth+](https://itunes.apple.com/us/app/bandwidth/id490461369?mt=12)
 - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
+
+## Homebew
+- vim
+- git
+- zsh
+- httpie
+- nload
+- htop
+
