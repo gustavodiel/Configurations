@@ -1,4 +1,4 @@
-# Atom Configurations by Ricardoshn
+# Atom Configurations by [Ricardoshn](https://github.com/ricardosohn)
 
 ### To change your Atom configurations, open atom, press CTRL + CMD + P and type open config, then press Enter
 ### Copy everything below this into your configs

@@ -1,4 +1,4 @@
-# Zsh + Oh My Zsh Configurations
+# Zsh + Oh My Zsh Configurations by [Gustavodiel](https://github.com/gustavodiel)
 
 ## Installation of [Oh My Zsh](https://ohmyz.sh)
 ### macOS

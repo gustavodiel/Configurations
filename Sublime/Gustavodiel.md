@@ -1,4 +1,4 @@
-# Sublime Text 3 Configurations
+# Sublime Text 3 Configurations by [Gustavodiel](https://github.com/gustavodiel)
 
 ## Post Install
 
@@ -34,12 +34,12 @@ ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/loc
   "word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~"
 }
 ```
-SublimeLinter
+
 ### Plugins
 * [All Autocomplete](https://github.com/alienhard/SublimeAllAutocomplete)
 * [MarkdownPreview](https://github.com/facelessuser/MarkdownPreview)
     - Set shortcut: `{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"}}`
-* [RailsGoToSpec](https://github.com/sporto/rails_go_to_spec) :heart:
+* [RailsGoToSpec](https://github.com/sporto/rails_go_to_spec)
 * [RSpec](https://github.com/SublimeText/RSpec)
 * [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter)
 * [SublimeLinter-rubocop](https://github.com/SublimeLinter/SublimeLinter-rubocop)

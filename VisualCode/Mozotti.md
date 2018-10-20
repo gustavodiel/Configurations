@@ -1,4 +1,4 @@
-# Mozotti's Visual Code
+# Visual Code's Configuration by [Mozotti](https://github.com/Mozotti)
 
 ## Post Install
 
