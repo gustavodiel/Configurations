@@ -8,3 +8,5 @@ sh 200_create_personal_folders.sh
 sh 300_install_necessary_stuff.sh
 sh 400_setup_configs.sh
 sh 500_install_random_stuff.sh
+
+toilet -f mono12 -F border " Enjoy "

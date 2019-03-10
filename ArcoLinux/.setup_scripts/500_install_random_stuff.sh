@@ -5,6 +5,832 @@ set -e
 # Website 	: 	https://www.diel.dev
 ##################################################################################################################
 
+sudo pacman -S asciiquarium --noconfirm --needed
+sudo pacman -S cmatrix --noconfirm --needed
+sudo pacman -S cool-retro-term --noconfirm --needed
+sudo pacman -S cowfortune --noconfirm --needed
+sudo pacman -S figlet --noconfirm --needed
+sudo pacman -S lolcat --noconfirm --needed
+sudo pacman -S mc --noconfirm --needed
+sudo pacman -S ranger --noconfirm --needed
+sudo pacman -S sl --noconfirm --needed
+sudo pacman -S ufetch-arco-git --noconfirm --needed
+
+
+################################################################################
+################################################################################
+
+echo "Installing bash-pipes"
+echo "Start with pipes"
+
+package="bash-pipes"
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "################## "$package" is already installed"
+		echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi yay &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yay"
+		echo "################################################################"
+		yay -S --noconfirm $package
+
+	elif pacman -Qi trizen &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with trizen"
+		echo "################################################################"
+		trizen -S --noconfirm --needed --noedit $package
+
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yaourt"
+		echo "################################################################"
+		yaourt -S --noconfirm $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with pacaur"
+		echo "################################################################"
+		pacaur -S --noconfirm --noedit  $package
+
+	elif pacman -Qi packer &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with packer"
+		echo "################################################################"
+		packer -S --noconfirm --noedit  $package
+
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
+
+	else
+
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
+
+################################################################################
+################################################################################
+
+echo "Installing boxes"
+echo "Start with boxes"
+
+package="boxes"
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "################## "$package" is already installed"
+		echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi yay &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yay"
+		echo "################################################################"
+		yay -S --noconfirm $package
+
+	elif pacman -Qi trizen &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with trizen"
+		echo "################################################################"
+		trizen -S --noconfirm --needed --noedit $package
+
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yaourt"
+		echo "################################################################"
+		yaourt -S --noconfirm $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with pacaur"
+		echo "################################################################"
+		pacaur -S --noconfirm --noedit  $package
+
+	elif pacman -Qi packer &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with packer"
+		echo "################################################################"
+		packer -S --noconfirm --noedit  $package
+
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
+
+	else
+
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
+
+################################################################################
+################################################################################
+
+
+
+echo "Installing cava"
+echo "Start with cava and put some music on"
+
+package="cava"
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "################## "$package" is already installed"
+		echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi yay &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yay"
+		echo "################################################################"
+		yay -S --noconfirm $package
+
+	elif pacman -Qi trizen &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with trizen"
+		echo "################################################################"
+		trizen -S --noconfirm --needed --noedit $package
+
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yaourt"
+		echo "################################################################"
+		yaourt -S --noconfirm $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with pacaur"
+		echo "################################################################"
+		pacaur -S --noconfirm --noedit  $package
+
+	elif pacman -Qi packer &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with packer"
+		echo "################################################################"
+		packer -S --noconfirm --noedit  $package
+
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
+
+	else
+
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
+
+################################################################################
+################################################################################
+
+
+package="cpufetch-git"
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "################## "$package" is already installed"
+		echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi yay &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yay"
+		echo "################################################################"
+		yay -S --noconfirm $package
+
+	elif pacman -Qi trizen &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with trizen"
+		echo "################################################################"
+		trizen -S --noconfirm --needed --noedit $package
+
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yaourt"
+		echo "################################################################"
+		yaourt -S --noconfirm $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with pacaur"
+		echo "################################################################"
+		pacaur -S --noconfirm --noedit  $package
+
+	elif pacman -Qi packer &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with packer"
+		echo "################################################################"
+		packer -S --noconfirm --noedit  $package
+
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
+
+	else
+
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
+
+################################################################################
+################################################################################
+
+
+package="curseradio-git"
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "################## "$package" is already installed"
+		echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi yay &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yay"
+		echo "################################################################"
+		yay -S --noconfirm $package
+
+	elif pacman -Qi trizen &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with trizen"
+		echo "################################################################"
+		trizen -S --noconfirm --needed --noedit $package
+
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yaourt"
+		echo "################################################################"
+		yaourt -S --noconfirm $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with pacaur"
+		echo "################################################################"
+		pacaur -S --noconfirm --noedit  $package
+
+	elif pacman -Qi packer &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with packer"
+		echo "################################################################"
+		packer -S --noconfirm --noedit  $package
+
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
+
+	else
+
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
+################################################################################
+################################################################################
+
+
+package="gotop-bin"
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "################## "$package" is already installed"
+		echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi yay &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yay"
+		echo "################################################################"
+		yay -S --noconfirm $package
+
+	elif pacman -Qi trizen &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with trizen"
+		echo "################################################################"
+		trizen -S --noconfirm --needed --noedit $package
+
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yaourt"
+		echo "################################################################"
+		yaourt -S --noconfirm $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with pacaur"
+		echo "################################################################"
+		pacaur -S --noconfirm --noedit  $package
+
+	elif pacman -Qi packer &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with packer"
+		echo "################################################################"
+		packer -S --noconfirm --noedit  $package
+
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
+
+	else
+
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
+################################################################################
+################################################################################echo "Installing pywal"
+echo "Start with cava and put some music on"
+
+package="python-pywal"
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "################## "$package" is already installed"
+		echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi yay &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yay"
+		echo "################################################################"
+		yay -S --noconfirm $package
+
+	elif pacman -Qi trizen &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with trizen"
+		echo "################################################################"
+		trizen -S --noconfirm --needed --noedit $package
+
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yaourt"
+		echo "################################################################"
+		yaourt -S --noconfirm $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with pacaur"
+		echo "################################################################"
+		pacaur -S --noconfirm --noedit  $package
+
+	elif pacman -Qi packer &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with packer"
+		echo "################################################################"
+		packer -S --noconfirm --noedit  $package
+
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
+
+	else
+
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
+
+################################################################################
+################################################################################
+
+
+echo "Installing toilet"
+echo "toilet -f mono12 -F metal ArcoLinux"
+
+package="toilet"
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "################## "$package" is already installed"
+		echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi yay &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yay"
+		echo "################################################################"
+		yay -S --noconfirm $package
+
+	elif pacman -Qi trizen &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with trizen"
+		echo "################################################################"
+		trizen -S --noconfirm --needed --noedit $package
+
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yaourt"
+		echo "################################################################"
+		yaourt -S --noconfirm $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with pacaur"
+		echo "################################################################"
+		pacaur -S --noconfirm --noedit  $package
+
+	elif pacman -Qi packer &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with packer"
+		echo "################################################################"
+		packer -S --noconfirm --noedit  $package
+
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
+
+	else
+
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
+
+################################################################################
+################################################################################
+
+
+
+package="slurm"
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "################## "$package" is already installed"
+		echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi yay &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yay"
+		echo "################################################################"
+		yay -S --noconfirm $package
+
+	elif pacman -Qi trizen &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with trizen"
+		echo "################################################################"
+		trizen -S --noconfirm --needed --noedit $package
+
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yaourt"
+		echo "################################################################"
+		yaourt -S --noconfirm $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with pacaur"
+		echo "################################################################"
+		pacaur -S --noconfirm --noedit  $package
+
+	elif pacman -Qi packer &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with packer"
+		echo "################################################################"
+		packer -S --noconfirm --noedit  $package
+
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
+
+	else
+
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
+
+################################################################################
+################################################################################
+
+
+echo "Installing tty-clock"
+
+package="tty-clock"
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "################## "$package" is already installed"
+		echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi yay &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yay"
+		echo "################################################################"
+		yay -S --noconfirm $package
+
+	elif pacman -Qi trizen &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with trizen"
+		echo "################################################################"
+		trizen -S --noconfirm --needed --noedit $package
+
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yaourt"
+		echo "################################################################"
+		yaourt -S --noconfirm $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with pacaur"
+		echo "################################################################"
+		pacaur -S --noconfirm --noedit  $package
+
+	elif pacman -Qi packer &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with packer"
+		echo "################################################################"
+		packer -S --noconfirm --noedit  $package
+
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
+
+	else
+
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
+
+################################################################################
+################################################################################
+
+
+package="ufetch-git"
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "################## "$package" is already installed"
+		echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi yay &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yay"
+		echo "################################################################"
+		yay -S --noconfirm $package
+
+	elif pacman -Qi trizen &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with trizen"
+		echo "################################################################"
+		trizen -S --noconfirm --needed --noedit $package
+
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with yaourt"
+		echo "################################################################"
+		yaourt -S --noconfirm $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with pacaur"
+		echo "################################################################"
+		pacaur -S --noconfirm --noedit  $package
+
+	elif pacman -Qi packer &> /dev/null; then
+
+		echo "################################################################"
+		echo "######### Installing with packer"
+		echo "################################################################"
+		packer -S --noconfirm --noedit  $package
+
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+
+		echo "################################################################"
+		echo "#########  "$package" has been installed"
+		echo "################################################################"
+
+	else
+
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+		echo "!!!!!!!!!  "$package" has NOT been installed"
+		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
 
 echo "################################################################"
 echo "###                 Random stuff Installed!                 ####"
