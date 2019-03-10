@@ -24,7 +24,8 @@ sudo pacman -S --noconfirm --needed \
   blueman \
   progress \
   arandr \
-  nodejs
+  nodejs \
+  virtualbox
 
 
 

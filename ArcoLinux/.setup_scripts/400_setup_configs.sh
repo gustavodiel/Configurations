@@ -7,6 +7,7 @@ set -e
 
 
 echo "### Setting up Autostart"
+echo "TODO"
 
 echo "### Setting up Oh-My-ZSH"
 
@@ -19,13 +20,8 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 
 cp ../settings/oh-my-zsh/zshrc ~/.zshrc
 
-
-echo "### Setting up Font Awesome"
-
-
 echo "### Setting up Screen Layout"
-
-echo "### Setting up Spaceship Prompt"
+echo "TODO"
 
 
 echo "### Setting up i3 + Installing bumblebee-status"
@@ -38,6 +34,11 @@ cp ../settings/vim/configvim/nvim ~/.config/nvim/init.vim
 cp -r ../setting/vim/dotvim/* ~/.vim
 
 echo "### Finished setting up Neo Vim. Please open it and type :PlugInstall"
+
+
+echo "### Env: Rails (rvm) - TODO"
+echo "### Env: Python (virtualenv) - TODO"
+echo "### Env: Node (node) - TODO"
 
 
 echo "################################################################"
