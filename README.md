@@ -5,4 +5,9 @@ This repo was created in order to keep my configuration files and settings for e
 You may as well add yours, feel free :)
 
 # Repo Map
-## TODO
+- [ArcoLinux](/ArcoLinux)
+- [Atom](/Atom)
+- [macOS](/macOS)
+- [Sublime](/Sublime)
+- [VisualCode](/VisualCode)
+- [Zsh](/Zsh)
