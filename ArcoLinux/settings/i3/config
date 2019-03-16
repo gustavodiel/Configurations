@@ -853,7 +853,7 @@ bar {
     #tray_output $secondMonitor
 
 # OPTION 0 : Bumblebee Status
-	status_command ~/repos/bumblebee-status/bumblebee-status -m cpu memory battery time -p time.format="%H:%M" -t gruvbox-powerline
+	status_command ~/.config/bumblebee-status/bumblebee-status -m cpu memory battery time -p time.format="%H:%M" -t gruvbox-powerline
 
 # OPTION 1 : i3status
 

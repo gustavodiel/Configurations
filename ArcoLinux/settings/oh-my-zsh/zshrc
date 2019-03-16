@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Keyboard config:
-setxkbmap -layout br
+setxkbmap -layout us
 
 
 # Path to your oh-my-zsh installation.
@@ -157,8 +157,8 @@ alias json='f() { curl $1 2> /dev/null | jq };f'
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -la'
-alias l='ls'          
-alias l.="ls -A | egrep '^\.'"      
+alias l='ls'
+alias l.="ls -A | egrep '^\.'"
 
 #fix obvious typo's
 alias cd..='cd ..'
@@ -202,9 +202,6 @@ alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
 #grub update
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
-#improve png
-alias fixpng="find . -type f -name "*.png" -exec convert {} -strip {} \;"
-
 #add new fonts
 alias fc='sudo fc-cache -fv'
 
@@ -229,7 +226,7 @@ alias trizenskip='trizen -S --skipinteg'
 #check vulnerabilities microcode
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 
-#get fastest mirrors in your neighborhood 
+#get fastest mirrors in your neighborhood
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
@@ -237,14 +234,6 @@ alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pac
 
 #mounting the folder Public for exchange between host and guest on virtualbox
 alias vbm="sudo mount -t vboxsf -o rw,uid=1000,gid=1000 Public /home/$USER/Public"
-
-#shopt
-shopt -s autocd # change to named directory
-shopt -s cdspell # autocorrects cd misspellings
-shopt -s cmdhist # save multi-line commands in history as single line
-shopt -s dotglob
-shopt -s histappend # do not overwrite history
-shopt -s expand_aliases # expand aliases
 
 #youtube-dl
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
@@ -263,7 +252,3 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -100"
 
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
-
-# Font Awesome
-source ~/.fonts/*.sh
-
