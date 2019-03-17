@@ -14,7 +14,7 @@ ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/loc
 ### Config file
 ```json
 {
-  "font_face": "Fira Code",
+  "font_face": "Fira Code Light",
   "font_options":
   [
     "subpixel_antialias"
