@@ -671,11 +671,11 @@ bindsym mod1+Down exec --no-startup-id variety --resume
 #####################################################################################################################
 
 # next wallpaper
-bindsym mod1+Shift+n exec --no-startup-id variety -n && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)& 
+bindsym mod1+Shift+n exec --no-startup-id variety -n && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
 # previous wallpaper
-bindsym mod1+Shift+p exec --no-startup-id variety -p && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)& 
+bindsym mod1+Shift+p exec --no-startup-id variety -p && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
 # trash wallpaper
-bindsym mod1+Shift+t exec --no-startup-id variety -t && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)& 
+bindsym mod1+Shift+t exec --no-startup-id variety -t && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
 # Update Wallpaper
 bindsym mod1+Shift+u exec --no-startup-id wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)
 
@@ -853,7 +853,7 @@ bar {
     #tray_output $secondMonitor
 
 # OPTION 0 : Bumblebee Status
-	status_command ~/.config/bumblebee-status/bumblebee-status -m cpu memory battery time -p time.format="%H:%M" -t gruvbox-powerline
+    status_command ~/.config/bumblebee-status/bumblebee-status -m cpu sensors memory todo traffic time -p time.format="%H:%M" -t gruvbox-powerline
 
 # OPTION 1 : i3status
 

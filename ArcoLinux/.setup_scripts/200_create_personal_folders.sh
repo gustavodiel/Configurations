@@ -8,7 +8,8 @@ set -e
 echo "Creating personal folders"
 
 [ -d $HOME"/Personal" ] || mkdir -p $HOME"/Personal"
-[ -d $HOME"/Workspace" ] || mkdir -p $HOME"/Workspace"
+[ -d $HOME"/Workspace" ] || mkdir -p $HOME"/MLabs"
+[ -d $HOME"/Workspace" ] || mkdir -p $HOME"/Udesc"
 
 [ -d $HOME"/.bin" ] || mkdir -p $HOME"/.bin"
 [ -d $HOME"/.fonts" ] || mkdir -p $HOME"/.fonts"
